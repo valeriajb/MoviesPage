@@ -1,84 +1,91 @@
-*{ 
+* {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
 
-.navBar{ 
+.navBar {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     background-color: #000000;
     padding: 0 50px;
     height: 80px;
 }
 
-.container-left{ 
+.container-left {
     display: flex;
     align-items: center;
     gap: 80px;
 }
-.logo{ 
+
+.logo {
     font-weight: 600;
     font-size: 30px;
     color: #5baa32;
 }
 
-.categories{ 
+.categories {
     display: flex;
     gap: 20px;
 }
 
-.item-categorie{ 
-    color:white;
+.item-categorie {
+    color: white;
     list-style: none;
     cursor: pointer;
 }
-.item-categorie.active{ 
+
+.item-categorie.active {
     font-weight: 600
 }
 
-.container-right{ 
+.container-right {
     display: flex;
-    gap:30px;
+    gap: 30px;
     align-items: center;
 
 }
 
 
-.image-user{ 
+.image-user {
     width: 35px;
     height: 35px;
     border-radius: 50%;
 }
 
-.container-profile{ 
+.container-profile {
     display: flex;
     gap: 10px;
     align-items: center;
 }
-.profile-text{ 
+
+.profile-text {
     color: white;
     font-size: 15px;
 }
-.fa-caret-down{ 
+
+.fa-caret-down {
     color: white;
 }
-.container-toggle{ 
+
+.container-toggle {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 70px;
-    height:30px;
+    height: 30px;
     border-radius: 50px;
     background-color: white;
     position: relative;
 
 }
-.icon-toggle{ 
+
+.icon-toggle {
     font-size: 20px;
     color: #c9a85a;
 }
-.button-toggle{ 
+
+.button-toggle {
     position: absolute;
     background-color: black;
     width: 35px;
@@ -88,7 +95,7 @@
 
 }
 
-.menuBar{ 
+.menuBar {
     width: 50px;
     height: 100vh;
     background-color: #000000;
@@ -101,49 +108,122 @@
     padding-top: 80px;
 
 }
-.icon-menu{ 
+
+.icon-menu {
     font-size: 25px;
     color: white;
 }
-.container-info{
-    margin-left:50px;
+
+.container-info {
+    margin-left: 50px;
     height: calc(1000vh - 50px);
     background-color: #000000;
 }
 
-.section-image-main{ 
+.section-image-main {
     display: flex;
     align-items: center;
     height: 50vh;
-    background:  linear-gradient(to bottom, rgba(0,0,0,0), #151515),url("./img/f-1.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url("./img/f-1.jpg");
 }
 
-.info-movie{ 
+.info-movie {
     width: 500px;
     margin-left: 35px;
 
 }
-.title-image-movie{ 
+
+.title-image-movie {
     width: 250px;
 }
-.description-movie{ 
+
+.description-movie {
     color: white;
-    text-align:justify;
+    text-align: justify;
     margin: 20px 0px;
     cursor: pointer;
 }
-.btn-watch{ 
+
+.btn-watch {
     border-style: none;
     border-radius: 10px;
     background-color: #4dbf00;
-    padding:10px;
+    padding: 10px;
     color: white;
     font-weight: bold;
     font-size: 15px;
     outline: none;
 }
-.btn-watch:hover{ 
+
+.btn-watch:hover {
     background-color: green;
 }
 
+.slider-movies {
+    height: 50vh;
+    padding: 15px 10px;
+}
 
+.title-slider-movies {
+    font-weight: bold;
+    color: white;
+}
+
+.container-slider-movies {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35vh;
+    position: relative;
+}
+
+
+.icon-slider {
+    font-size: 50px;
+    color: rgb(211, 208, 208);
+    position: absolute;
+    z-index: 5;
+}
+
+.fa-arrow-right {
+    right: 0px;
+}
+
+.slider-movies-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-movie {
+    width: 320px;
+    height: 200px;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.card-movie:hover{ 
+    transform: scale(1.05);
+    transition: all 1s ease-in;
+}
+.image-card-movie {
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    object-fit: fill;
+
+}
+
+.description-card-movie {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    visibility: hidden;
+}
