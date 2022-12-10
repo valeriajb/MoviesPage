@@ -105,13 +105,45 @@
     font-size: 25px;
     color: white;
 }
-
-
-
-
-
-
-
-.container{
-    padding-left:50px;
+.container-info{
+    margin-left:50px;
+    height: calc(1000vh - 50px);
+    background-color: #000000;
 }
+
+.section-image-main{ 
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    background:  linear-gradient(to bottom, rgba(0,0,0,0), #151515),url("./img/f-1.jpg");
+}
+
+.info-movie{ 
+    width: 500px;
+    margin-left: 35px;
+
+}
+.title-image-movie{ 
+    width: 250px;
+}
+.description-movie{ 
+    color: white;
+    text-align:justify;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+.btn-watch{ 
+    border-style: none;
+    border-radius: 10px;
+    background-color: #4dbf00;
+    padding:10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    outline: none;
+}
+.btn-watch:hover{ 
+    background-color: green;
+}
+
+
