@@ -1,118 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/index.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/index.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-    <title>Netflix Clone</title>
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap" rel="stylesheet" />
 
-  <body>
-    <nav class="navBar">
-      <div class="container-left">
-        <span class="logo">.NetFlix</span>
-        <ul class="categories">
-          <li class="item-categorie home">Home</li>
-          <li class="item-categorie">Movies</li>
-          <li class="item-categorie">Series</li>
-          <li class="item-categorie">Popular</li>
-          <li class="item-categorie">Trends</li>
-        </ul>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <title>Netflix Clone</title>
+</head>
+
+<body>
+  <nav class="navBar">
+    <div class="container-left">
+      <span class="logo">.NetFlix</span>
+      <ul class="categories">
+        <li class="item-categorie home">Home</li>
+        <li class="item-categorie">Movies</li>
+        <li class="item-categorie">Series</li>
+        <li class="item-categorie">Popular</li>
+        <li class="item-categorie">Trends</li>
+      </ul>
+    </div>
+    <div class="container-right">
+      <img src="/img/profile.jpg" alt="photoProfile" class="image-user" />
+      <div class="container-profile">
+        <span class="profile-text">Perfil</span>
+        <i class="fa-solid fa-caret-down"></i>
       </div>
-      <div class="container-right">
-        <img src="/img/profile.jpg" alt="photoProfile" class="image-user" />
-        <div class="container-profile">
-          <span class="profile-text">Perfil</span>
-          <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="container-toggle">
-          <i class="fa-solid fa-moon icon-toggle"></i>
-          <i class="fa-solid fa-sun icon-toggle"></i>
-          <div class="button-toggle"></div>
-        </div>
+      <div class="container-toggle">
+        <i class="fa-solid fa-moon icon-toggle"></i>
+        <i class="fa-solid fa-sun icon-toggle"></i>
+        <div class="button-toggle"></div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <div class="menuBar">
-      <i class="icon-menu fa-sharp fa-solid fa-magnifying-glass"></i>
-      <i class="icon-menu fa-solid fa-house-chimney"></i>
-      <i class="icon-menu fa-solid fa-users"></i>
-      <i class="icon-menu fa-solid fa-bookmark"></i>
-      <i class="icon-menu fa-solid fa-display"></i>
-      <i class="icon-menu fa-solid fa-hourglass-half"></i>
-      <i class="icon-menu fa-solid fa-cart-shopping"></i>
+  <div class="menuBar">
+    <i class="icon-menu fa-sharp fa-solid fa-magnifying-glass"></i>
+    <i class="icon-menu fa-solid fa-house-chimney"></i>
+    <i class="icon-menu fa-solid fa-users"></i>
+    <i class="icon-menu fa-solid fa-bookmark"></i>
+    <i class="icon-menu fa-solid fa-display"></i>
+    <i class="icon-menu fa-solid fa-hourglass-half"></i>
+    <i class="icon-menu fa-solid fa-cart-shopping"></i>
+  </div>
+
+  <div class="container-info">
+    <div class="section-image-main">
+      <div class="info-movie">
+        <img src="/img/f-t-1.png" alt="" class="title-image-movie" />
+        <p class="description-movie">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+          quis odio blanditiis eius molestiae facilis sit reprehenderit ut.
+          Veniam ea eius voluptatibus debitis porro error repellendus.
+          Doloremque, nulla odit. Natus!Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Laborum quis odio blanditiis eius molestiae
+          facilis sit reprehenderit ut.
+        </p>
+        <button class="btn-watch">¡Ver Ahora!</button>
+      </div>
     </div>
 
-    <div class="container-info">
-      <div class="section-image-main">
-        <div class="info-movie">
-          <img src="/img/f-t-1.png" alt="" class="title-image-movie" />
-          <p class="description-movie">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-            quis odio blanditiis eius molestiae facilis sit reprehenderit ut.
-            Veniam ea eius voluptatibus debitis porro error repellendus.
-            Doloremque, nulla odit. Natus!Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Laborum quis odio blanditiis eius molestiae
-            facilis sit reprehenderit ut.
-          </p>
-          <button class="btn-watch">¡Ver Ahora!</button>
-        </div>
-      </div>
+    <div class="slider-movies">
+      <h1 class="title-slider-movies">NEW RELEASES</h1>
+      <div class="container-slider-movies">
+        <div class="slider-movies-container">
+          <div class="card-movie">
+            <img src="./img/1.jpeg" alt="Movie1" class="image-card-movie" />
+            <h3 class="title-card-movie">Her</h3>
+            <p class="description-card-movie">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repellat iure possimus molestias. Ad dignissimo.
+            </p>
+            <button class="btn-watch card-button-movie">¡Ver Ahora!</button>
+          </div>
+          <div class="card-movie">
+            <img src="./img/1.jpeg" alt="Movie1" class="image-card-movie" />
+            <h3 class="title-card-movie">Her</h3>
+            <p class="description-card-movie">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repellat iure possimus molestias. Ad dignissimo.
+            </p>
+            <button class="btn-watch card-button-movie">¡Ver Ahora!</button>
+          </div>
+          <div class="card-movie">
+            <img src="./img/1.jpeg" alt="Movie1" class="image-card-movie" />
+            <h3 class="title-card-movie">Her</h3>
+            <p class="description-card-movie">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repellat iure possimus molestias. Ad dignissimo.
+            </p>
+            <button class="btn-watch card-button-movie">¡Ver Ahora!</button>
+          </div>
+          <div class="card-movie">
+            <img src="./img/2.jpeg" alt="Movie1" class="image-card-movie" />
+            <h3 class="title-card-movie">Her</h3>
+            <p class="description-card-movie">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repellat iure possimus molestias. Ad dignissimo.
+            </p>
+            <button class="btn-watch card-button-movie">¡Ver Ahora!</button>
+          </div>
+          <div class="card-movie">
+            <img src="./img/3.jpg" alt="Movie1" class="image-card-movie" />
+            <h3 class="title-card-movie">Her</h3>
+            <p class="description-card-movie">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repellat iure possimus molestias. Ad dignissimo.
+            </p>
+            <button class="btn-watch card-button-movie">¡Ver Ahora!</button>
+          </div>
+          <div class="card-movie">
+            <img src="./img/4.jpg" alt="Movie1" class="image-card-movie" />
+            <h3 class="title-card-movie">Her</h3>
+            <p class="description-card-movie">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repellat iure possimus molestias. Ad dignissimo.
+            </p>
+            <button class="btn-watch card-button-movie">¡Ver Ahora!</button>
+          </div>
 
-      <div class="slider-movies">
-        <h1 class="title-slider-movies">NEW RELEASES</h1>
-        <div class="container-slider-movies">
-          <div class="slider-movies-container">
-            <div class="card-movie">
-              <img src="./img/1.jpeg" alt="Movie1" class="image-card-movie" />
-              <h3 class="title-card-movie">Her</h3>
-              <p class="description-card-movie">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat iure possimus molestias. Ad dignissimo.
-              </p>
-              <button class="btn-watch card-button-movie">¡Ver Ahora!</button>
-            </div>
-            <div class="card-movie">
-              <img src="./img/2.jpeg" alt="Movie1" class="image-card-movie" />
-              <h3 class="title-card-movie">Her</h3>
-              <p class="description-card-movie">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat iure possimus molestias. Ad dignissimo.
-              </p>
-              <button class="btn-watch card-button-movie">¡Ver Ahora!</button>
-            </div>
-            <div class="card-movie">
-              <img src="./img/3.jpg" alt="Movie1" class="image-card-movie" />
-              <h3 class="title-card-movie">Her</h3>
-              <p class="description-card-movie">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat iure possimus molestias. Ad dignissimo.
-              </p>
-              <button class="btn-watch card-button-movie">¡Ver Ahora!</button>
-            </div>
-            <div class="card-movie">
-              <img src="./img/4.jpg" alt="Movie1" class="image-card-movie" />
-              <h3 class="title-card-movie">Her</h3>
-              <p class="description-card-movie">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat iure possimus molestias. Ad dignissimo.
-              </p>
-              <button class="btn-watch card-button-movie">¡Ver Ahora!</button>
-            </div>
-            
           <i class="icon-slider fa-solid fa-chevron-right"></i>
         </div>
       </div>
@@ -269,5 +282,6 @@
     </div>
 
     <script src="./index.js"></script>
-  </body>
+</body>
+
 </html>

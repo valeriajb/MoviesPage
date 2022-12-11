@@ -1,303 +1,292 @@
 * {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+body{ 
+  background-color: #000000;
 }
 
 .navBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000000;
-    padding: 0 50px;
-    height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 0 50px;
+  height: 80px;
 }
 
 .navBar.active {
-    background-color: white;
+  background-color: white;
 }
 
 .container-left {
-    display: flex;
-    align-items: center;
-    gap: 80px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
 }
 
 .logo {
-    font-weight: 600;
-    font-size: 30px;
-    color: #5baa32;
-    cursor: pointer;
+  font-weight: 600;
+  font-size: 30px;
+  color: #5baa32;
+  cursor: pointer;
 }
 
 .categories {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .item-categorie {
-    color: white;
-    list-style: none;
-    cursor: pointer;
+  color: white;
+  list-style: none;
+  cursor: pointer;
 }
 
 .item-categorie.active {
-    color: black;
+  color: black;
 }
 
 .home {
-    font-weight: 600
+  font-weight: 600;
 }
 
 .container-right {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
 
-
 .image-user {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }
 
 .container-profile {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .profile-text {
-    color: white;
-    font-size: 15px;
+  color: white;
+  font-size: 15px;
 }
 
 .profile-text.active {
-    color: black;
+  color: black;
 }
 
 .fa-caret-down {
-    color: white;
+  color: white;
 }
 
 .fa-caret-down.active {
-    color: black;
+  color: black;
 }
 
 .container-toggle {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 70px;
-    height: 30px;
-    border-radius: 50px;
-    background-color: white;
-    position: relative;
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: white;
+  position: relative;
 }
 
 .container-toggle.active {
-    background-color: black;
+  background-color: black;
 }
 
 .icon-toggle {
-    font-size: 20px;
-    color: #deae3c;
+  font-size: 20px;
+  color: #deae3c;
 }
 
 .button-toggle {
-    position: absolute;
-    background-color: black;
-    width: 35px;
-    height: 28px;
-    border-radius: 50px;
-    right: 0;
-
+  position: absolute;
+  background-color: black;
+  width: 35px;
+  height: 28px;
+  border-radius: 50px;
+  right: 0;
 }
 
 .button-toggle.active {
-    background-color: white;
-    left: 0;
-
+  background-color: white;
+  left: 0;
 }
 
 .menuBar {
-    width: 50px;
-    height: 100vh;
-    background-color: #000000;
-    position: fixed;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    padding-top: 80px;
-
+  width: 50px;
+  height: 100vh;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-top: 80px;
 }
 
 .menuBar.active {
-    background-color: white;
+  background-color: white;
 }
 
 .icon-menu {
-    font-size: 25px;
-    color: white;
+  font-size: 25px;
+  color: white;
 }
 
 .icon-menu.active {
-    color: black;
+  color: black;
 }
 
 .container-info {
-    margin-left: 50px;
-    height: calc(1000vh - 50vh);
-    background-color: #000000;
+  margin-left: 50px;
+  height: 100%;
+  background-color: #000000;
 }
 
 .section-image-main {
-    display: flex;
-    align-items: center;
-    height: 50vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url("./img/f-1.jpg");
+  display: flex;
+  align-items: center;
+  height: 50vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
+    url("./img/f-1.jpg");
 }
 
 .info-movie {
-    width: 500px;
-    margin-left: 35px;
-
+  width: 500px;
+  margin-left: 35px;
 }
 
 .title-image-movie {
-    width: 250px;
+  width: 250px;
 }
 
 .description-movie {
-    color: white;
-    text-align: justify;
-    margin: 20px 0px;
-    cursor: pointer;
+  color: white;
+  text-align: justify;
+  margin: 20px 0px;
+  cursor: pointer;
 }
 
 .btn-watch {
-    border-style: none;
-    border-radius: 10px;
-    background-color: #4dbf00;
-    padding: 10px;
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
-    outline: none;
+  border-style: none;
+  border-radius: 10px;
+  background-color: #4dbf00;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  outline: none;
 }
 
 .btn-watch:hover {
-    background-color: green;
+  background-color: green;
 }
 
 .slider-movies {
-    height: 50vh;
-    padding: 15px 10px;
+  height: 50vh;
+  padding: 15px 10px;
 }
 
 .title-slider-movies {
-    font-weight: bold;
-    color: white;
+  font-weight: bold;
+  color: white;
 }
 
 .container-slider-movies {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 35vh;
-    position: relative;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-
 .icon-slider {
-    font-size: 80px;
-    color: rgb(211, 208, 208);
-    opacity: 0.5;
-    position: absolute;
+  font-size: 80px;
+  color: rgb(211, 208, 208);
+  opacity: 0.5;
+  position: absolute;
 }
 
 .fa-chevron-right {
-    right: 0;
+  right: 0;
 }
 
 .icon-left {
-    left: 0;
+  left: 0;
 }
 
-
 .slider-movies-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .card-movie {
-    width: 320px;
-    height: 200px;
-    position: relative;
-    border-radius: 25px;
-    cursor: pointer;
-
+  width: 320px;
+  height: 200px;
+  position: relative;
+  border-radius: 25px;
+  cursor: pointer;
 }
 
 .card-movie:hover {
-    transform: scale(1.05);
-    transition: all 1s ease-in;
+  transform: scale(1.05);
+  transition: all 1s ease-in;
 }
 
 .image-card-movie {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
 .title-card-movie {
-    color: white;
-    position: absolute;
-    font-size: 30px;
-    font-weight: 800;
-    top: 0;
-    left: 30%;
-    top: 15px;
-    background-color: rgb(68, 67, 67);
-    opacity: 0;
-
-
+  color: white;
+  position: absolute;
+  font-size: 30px;
+  font-weight: 800;
+  top: 0;
+  left: 30%;
+  top: 15px;
+  background-color: rgb(68, 67, 67);
+  opacity: 0;
 }
 
 .description-card-movie {
-    position: absolute;
-    top: 50px;
-    left: 30%;
-    background-color: rgb(68, 67, 67);
-    color: white;
-    text-align: justify;
-    opacity: 0;
+  position: absolute;
+  top: 50px;
+  left: 30%;
+  background-color: rgb(68, 67, 67);
+  color: white;
+  text-align: justify;
+  opacity: 0;
 }
 
 .card-button-movie {
-    position: absolute;
-    left: 30%;
-    bottom: 35px;
-    opacity: 0;
+  position: absolute;
+  left: 30%;
+  bottom: 35px;
+  opacity: 0;
 }
 
 .card-movie:hover .title-card-movie,
 .card-movie:hover .description-card-movie,
 .card-movie:hover .card-button-movie {
-    opacity: 1;
-    transition: all 1s ease-in;
+  opacity: 1;
+  transition: all 1s ease-in;
 }
 
 .section-2 {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url("./img/f-2.jpg");
-
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
+    url("./img/f-2.jpg");
 }

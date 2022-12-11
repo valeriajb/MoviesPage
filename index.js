@@ -6,6 +6,7 @@ const elementsActives = document.querySelectorAll(".navBar,.item-categorie,.prof
 btnModeColor.addEventListener("click", () => {
     elementsActives.forEach((element) => {
         element.classList.toggle("active")
+        element.style.transition=` all 1s ease-in` 
     })
     btnModeColor.classList.toggle("active")
 })
