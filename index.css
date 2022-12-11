@@ -12,6 +12,10 @@
     height: 80px;
 }
 
+.navBar.active {
+    background-color: white;
+}
+
 .container-left {
     display: flex;
     align-items: center;
@@ -22,6 +26,7 @@
     font-weight: 600;
     font-size: 30px;
     color: #5baa32;
+    cursor: pointer;
 }
 
 .categories {
@@ -36,6 +41,10 @@
 }
 
 .item-categorie.active {
+    color: black;
+}
+
+.home {
     font-weight: 600
 }
 
@@ -64,8 +73,16 @@
     font-size: 15px;
 }
 
+.profile-text.active {
+    color: black;
+}
+
 .fa-caret-down {
     color: white;
+}
+
+.fa-caret-down.active {
+    color: black;
 }
 
 .container-toggle {
@@ -78,6 +95,10 @@
     background-color: white;
     position: relative;
 
+}
+
+.container-toggle.active {
+    background-color: black;
 }
 
 .icon-toggle {
@@ -95,6 +116,12 @@
 
 }
 
+.button-toggle.active {
+    background-color: white;
+    left: 0;
+
+}
+
 .menuBar {
     width: 50px;
     height: 100vh;
@@ -109,14 +136,22 @@
 
 }
 
+.menuBar.active {
+    background-color: white;
+}
+
 .icon-menu {
     font-size: 25px;
     color: white;
 }
 
+.icon-menu.active {
+    color: black;
+}
+
 .container-info {
     margin-left: 50px;
-    height: calc(1000vh - 50px);
+    height: calc(1000vh - 50vh);
     background-color: #000000;
 }
 
