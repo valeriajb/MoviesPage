@@ -2,7 +2,8 @@
   font-family: "Montserrat", sans-serif;
   margin: 0;
 }
-body{ 
+
+body {
   background-color: #000000;
 }
 
@@ -42,6 +43,8 @@ body{
   list-style: none;
   cursor: pointer;
 }
+
+
 
 .item-categorie.active {
   color: black;
@@ -203,9 +206,8 @@ body{
 
 .container-slider-movies {
   margin-top: 30px;
-  display: flex;
-  align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .icon-slider {
@@ -213,6 +215,7 @@ body{
   color: rgb(211, 208, 208);
   opacity: 0.5;
   position: absolute;
+  bottom: 30%;
 }
 
 .fa-chevron-right {
@@ -224,19 +227,16 @@ body{
 }
 
 .slider-movies-container {
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  transition: all 1s ease-in-out;
+
 }
 
 .card-movie {
-  width: 320px;
-  height: 200px;
   position: relative;
-  border-radius: 25px;
   cursor: pointer;
+  margin-right: 50px;
 }
 
 .card-movie:hover {
@@ -245,9 +245,11 @@ body{
 }
 
 .image-card-movie {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
+  transition: all 1s ease-in-out;
+  width:320px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .title-card-movie {
