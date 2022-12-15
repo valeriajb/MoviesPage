@@ -4,7 +4,11 @@
 }
 
 body {
-  background-color: #000000;
+  background-color: black;
+}
+
+body.active {
+  background-color: white;
 }
 
 .navBar {
@@ -38,13 +42,15 @@ body {
   gap: 20px;
 }
 
+.categories-hamburguer.active{
+  background-color: white;
+}
+
 .item-categorie {
   color: white;
   list-style: none;
   cursor: pointer;
 }
-
-
 
 .item-categorie.active {
   color: black;
@@ -58,6 +64,7 @@ body {
   display: flex;
   gap: 30px;
   align-items: center;
+  z-index: 10;
 }
 
 .image-user {
@@ -109,6 +116,10 @@ body {
   color: #deae3c;
 }
 
+.icon-hamburguer {
+  display: none;
+}
+
 .button-toggle {
   position: absolute;
   background-color: black;
@@ -116,6 +127,8 @@ body {
   height: 28px;
   border-radius: 50px;
   right: 0;
+  transition: 2s ease all;
+
 }
 
 .button-toggle.active {
@@ -152,7 +165,6 @@ body {
 .container-info {
   margin-left: 50px;
   height: 100%;
-  background-color: #000000;
 }
 
 .section-image-main {
@@ -204,6 +216,11 @@ body {
   color: white;
 }
 
+.title-slider-movies.active {
+  font-weight: bold;
+  color: black;
+}
+
 .container-slider-movies {
   margin-top: 30px;
   position: relative;
@@ -211,26 +228,18 @@ body {
 }
 
 .icon-slider {
-  font-size: 80px;
-  color: rgb(211, 208, 208);
+  font-size: 100px;
+  color: rgb(108, 103, 103);
   opacity: 0.5;
   position: absolute;
   bottom: 30%;
-}
-
-.fa-chevron-right {
   right: 0;
-}
-
-.icon-left {
-  left: 0;
 }
 
 .slider-movies-container {
   display: flex;
   align-items: center;
   transition: all 1s ease-in-out;
-
 }
 
 .card-movie {
@@ -246,7 +255,7 @@ body {
 
 .image-card-movie {
   transition: all 1s ease-in-out;
-  width:320px;
+  width: 320px;
   height: 210px;
   object-fit: cover;
   border-radius: 20px;
@@ -291,4 +300,16 @@ body {
 .section-2 {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
     url("./img/f-2.jpg");
+}
+
+@media screen and (max-width: 900px) {
+  .categories {
+    display: none;
+  }
+
+  .icon-hamburguer{
+    display: block;
+    color: white;
+    font-size: 30px;
+  }
 }
